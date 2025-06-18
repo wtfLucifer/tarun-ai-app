@@ -25,7 +25,7 @@ function GeminiBot({ setChatHistory }) {
       const chatHistoryForApi = [{ role: "user", parts: [{ text: input }] }];
 
       const payload = { contents: chatHistoryForApi };
-      const apiKey = ""; // API key will be injected by the Canvas runtime
+      const apiKey = process.env.REACT_APP_GEMINI_API_KEY;
       const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
       const res = await fetch(apiUrl, {
