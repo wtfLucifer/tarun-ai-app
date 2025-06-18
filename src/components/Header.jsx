@@ -1,4 +1,9 @@
-import { FaPaperPlane, FaMicrophone, FaWhatsapp, FaLinkedin } from 'react-icons/fa';
+import React, { useState, useEffect } from 'react';
+import ReactDOM from 'react-dom/client';
+import { FaPaperPlane, FaMicrophone, FaWhatsapp, FaLinkedin } from 'react-icons/fa'; // Import all icons needed
+import profile from '../assets/profile.png';
+import '../index.css';
+import '../fonts/Bangers-Regular.ttf';
 function Header() {
   return (
     // Header section with flex layout for content alignment.
@@ -25,5 +30,4 @@ function Header() {
     </header>
   );
 }
-// ...existing code...
-export default Header;
+export default Header; // in Header.jsx

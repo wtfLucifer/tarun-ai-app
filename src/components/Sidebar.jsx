@@ -1,3 +1,9 @@
+import React, { useState, useEffect } from 'react';
+import ReactDOM from 'react-dom/client';
+import { FaPaperPlane, FaMicrophone, FaWhatsapp, FaLinkedin } from 'react-icons/fa'; // Import all icons needed
+import profile from '../assets/profile.png';
+import '../index.css';
+import '../fonts/Bangers-Regular.ttf';
 function Sidebar({ messages = [] }) {
   return (
     // Sidebar container with fixed width, border, and scrollability.
@@ -18,5 +24,4 @@ function Sidebar({ messages = [] }) {
     </div>
   );
 }
-// ...existing code...
-export default Sidebar;
+export default Sidebar; // in Sidebar.jsx

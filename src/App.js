@@ -1,13 +1,13 @@
+import Sidebar from './components/Sidebar';
+import Header from './components/Header';
+import GeminiBot from './components/GeminiBot';
+// ...existing code...
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import { FaPaperPlane, FaMicrophone, FaWhatsapp, FaLinkedin } from 'react-icons/fa'; // Import all icons needed
 import profile from './assets/profile.png'; // Ensure this path is correct
 import './index.css'; // Global styles including Tailwind directives and fonts
-// filepath: src/App.js
-import Sidebar from './components/Sidebar';
-import Header from './components/Header';
-import GeminiBot from './components/GeminiBot';
-// ...existing code...
+
 // --- App.js ---
 // Main application component, orchestrates the layout and state.
 function App() {
@@ -28,6 +28,5 @@ function App() {
       </div>
     </div>
   );
-  
 }
 export default App;

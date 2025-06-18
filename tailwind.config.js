@@ -1,7 +1,14 @@
 module.exports = {
   // Specify files to scan for Tailwind classes.
-  // This glob pattern is standard and should work in most environments.
-  content: ['./public/index.html', './src/**/*.js', './src/**/*.jsx'], // MODIFIED THIS LINE AGAIN
+  // This simplified glob pattern is intended to bypass compilation issues.
+  content: [
+    './public/index.html',
+    './src/App.js',
+    './src/components/Header.jsx',
+    './src/components/Sidebar.jsx',
+    './src/components/GeminiBot.jsx',
+    // Add other JS/JSX files here that use Tailwind classes if necessary
+  ],
   theme: {
     extend: {
       // Custom font families defined here.

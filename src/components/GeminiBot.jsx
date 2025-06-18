@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { FaMicrophone, FaPaperPlane } from 'react-icons/fa';
+import ReactDOM from 'react-dom/client';
+import { FaPaperPlane, FaMicrophone, FaWhatsapp, FaLinkedin } from 'react-icons/fa'; // Import all icons needed
+import profile from '../assets/profile.png';
+import '../index.css';
+import '../fonts/Bangers-Regular.ttf';
 function GeminiBot({ setChatHistory }) {
   const [input, setInput] = useState(''); // State for the user's input text
   const [response, setResponse] = useState(''); // State for the bot's response
@@ -118,5 +122,4 @@ function GeminiBot({ setChatHistory }) {
     </div>
   );
 }
-// ...existing code...
-export default GeminiBot;
+export default GeminiBot; // in GeminiBot.jsx
